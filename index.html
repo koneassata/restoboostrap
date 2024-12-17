@@ -1,66 +1,142 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-   <meta charset="UTF-8">
-   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <title>Goûter rester</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Restaurant </title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+       
+    </style>
 </head>
-
 <body>
-   <h1>Cuisine Africaine</h1>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#">Manger Boire</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#hero">Accueil</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#Menu">Menu</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#Apropos De Nous">Apropos De Nous</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
 
-   <h2>Entrées</h2>
-   <ul>
-       <li>
-           <strong>Salade</strong>: tomate fraîche , oignon.
-       </li>
-       <li>
-           <strong>Avocat</strong>:  tomate fraîche , oignon petit poid.
-       </li>
-       <li>
-           <strong>Comcombre</strong>: tomate fraîche , oignon .
-       </li>
-       <li>
-        <strong>Choux</strong>:  vinaigre , tomate fraîche , oignon .
-    </li>
-   </ul>
+    <!-- Hero Section -->
+    <section class="hero text-center" id="home">
+        <div class="container">
+          <h1 class="display-4">cuisine ivoirienne</h1>
+          <p class="lead">Découvrez los menu</p>
+          <a href="#menu" class="btn btn-primary btn-lg">Voir notre Menu</a>
+        </div>
+      </section>
 
-   <h2>Plats resistants</h2>
-   <ul>
-       <li>
-           <strong>Placali</strong>: sauce graine accompagné de viande de brousse .
-       </li>
-       <li>
-           <strong>Foutou</strong>: sauce pistache accompagné de polet Africain .
-       </li>
-       <li>
-           <strong>Riz</strong>: sauce aubergine accompagné de poisson fraîs .
-       </li>
-       <li>
-        <strong>Foufou</strong>: sauce claire accompagné de poisson fumés .
-    </li>
-   </ul>
+    
 
-   <h2>Desserts</h2>
-   <ul>
-       <li>
-           <strong>Glace</strong>: créme au parfum de menth.
-       </li>
-       <li>
-           <strong>Fruits</strong>: mangue, papaye .
-       </li>
-       <li>
-           <strong>Mousse au chocolat</strong>: Mousse chocolat noir.
-       </li>
-       <li>
-        <strong>Lait caillé</strong>: lait avec l'ajout du parfum vanille.
-    </li>
-   </ul>
+    <!-- Menu Section -->
+    <section id="menu" class="py-5">
+        <div class="container">
+            <div class="container my-5">
+                <div class="row">
+                  <!-- Colonne 1 -->
+            <div class="col-md-4 ">
+                    <img src="images/riz sauce.jpg" alt="Image 1" class="img-fluid me-3">
+                    <h3>riz</h3>
+                    <p>Riz sauce aubergine accompagné de viande de poulet.</p>
+                    <strong>2000 fcfa</strong>
+             </div>
+                  
+                  <!-- Colonne 2 -->
+            <div class="col-md-4 ">
+                    <img src="images/garba.png" alt="Image 2" class="img-fluid me-3">
+                    <h3>Garba</h3>
+                    <p>Attiéké accompagné de poisson thon .</p>
+                    <strong>1000 fcfa</strong>
+             </div>
+            
+                  <!-- Colonne 3 -->
+         <div class="col-md-4">
+                    <img src="images/apessi.png" alt="Image 3" class="img-fluid me-3">
+                    <h3>Apkessi</h3>
+                    <p>Banane bouillir accompagné de la patte et du poisson.</p>
+                    <strong>1500 fcfa</strong>
+        </div>
+                </div>
+              </div>
+        </div>
+    </section>
 
-   <p>
-    <a href="contact.html">Contactez-nous pour les réservations</a>
-</p>
+    <!-- About Section -->
+    <section id="about" class="py-5 bg-light">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-8">
+                 <img src="images/jekp.jpg" alt="">
+                </div>
+                
+                <div class="col-md-4">
+                    <h2>Apropos de nous</h2>
+                    <p>Bienvenue dans le <br> restaurant Manger boire nous avons des délicieux plats, ici le client est roi . <br> venez découvrir les meilleurs plats de mon pays .</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-4">Contactez-Nous</h2>
+            <form>
+                <div class="mb-3">
+                    <label for="name" class="form-label">Nom</label>
+                    <input type="text" class="form-control" id="name" placeholder="nom">
+                </div>
+                <div class="mb-3">
+                    <label for="email" class="form-label">Email</label>
+                    <input type="email" class="form-control" id="email" placeholder=" email">
+                </div>
+                <div class="mb-3">
+                    <label for="message" class="form-label">Message</label>
+                    <textarea class="form-control" id="message" rows="4" placeholder=" message"></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Envoyer</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer > 
+        <p>&copy; 2024 Manger Boire. All rights reserved.</p>
+        
+        <div class="social-icons mb-3">
+            <a
+              href="https://www.facebook.com"
+              class="text-white me-3"
+              target="_blank"
+              ><i class="fab fa-facebook fa-2x"></i
+            ></a>
+            <a
+              href="http://www.instagram.com"
+              class="text-white me-3"
+              target="_blank"
+              ><i class="fab fa-instagram fa-2x"></i
+            ></a>
+            <a href="http://www.twitter.com" class="text-white" target="_blank"
+              ><i class="fab fa-twitter fa-2x"></i
+            ></a>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
 </body>
-
 </html>
